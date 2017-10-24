@@ -457,7 +457,7 @@ abstract class AbstractGrant implements GrantTypeInterface
      *
      * @return string
      */
-    protected function generateUniqueIdentifier($length = 20)
+    protected function generateUniqueIdentifier($length = 5)
     {
         try {
             return bin2hex(random_bytes($length));
